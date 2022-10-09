@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #161618;
+	font-family: "Arial Narrow", Arial,sans-serif;
+	color: #babcbf;
+	font-size: 14px;
+	font-size-adjust: 0.45;
+}
+
+a {
+	color: #979899;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+p a {color: #f25322;}
+	a:hover { color: #ff7432; }
+	a.selected,	#issues li h1 a:hover {	color: #babcbf;	}
+
+h1,h2,h4,h5,h6 {
+	text-align: left;
+	color: #ccc;
+	text-shadow: #000 1px 1px 2px;
+	margin-bottom: 5px;
+}
+
+.sociales {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+	#timeline {
+		width: 682px;
+		height: 755px;
+		overflow: hidden;
+		margin: 15px auto 0;
+		position: relative;
+		background: url('/web/20160202001312im_/http://content.wargaming.net/time/dev/197/images/dot.gif') left 45px repeat-x;
+	}
+		#dates {
+			width: 682px;
+			height: 60px;
+			overflow: hidden;
+		}
+			#dates li {
+				list-style: none;
+				float: left;
+				width: 150px;
+				height: 50px;
+				font-size: 14px;
+				font-size-adjust: 0.4;
+				text-align: center;
+				background: url('/web/20160202001312im_/http://content.wargaming.net/time/dev/197/images/biggerdot.png') center bottom no-repeat;
+			}
+				#dates a {
+					line-height: 38px;
+					padding-bottom: 10px;
+				}
+				#dates .selected {
+			        color: #EEEEEE; 
+			        font-size: 18px;
+				}
+		
+		#issues {
+			width: 682px;
+			height: 740px;
+			overflow: hidden;
+			margin-top: 7px;
+		}	
+			#issues li {
+				width: 705px;
+				height: 740px;
+				list-style: none;
+				float: left;
+			}
+				#issues li img {
+					float: left; 
+					margin: 0 20px 15px 40px;
+				}
+				#issues li h1 {
+					color: #f9d088;
+					font-size: 24px;
+					margin: 5px 0 4px 288px;
+					padding-top: 2px;
+					text-shadow: #000 1px 1px 2px;
+				}
+				#issues li h1 a { 
+					color: #F9D088;
+					font-family: "Arial Narrow",Arial,"Helvetica CY",Helvetica,sans-serif; 
+					font-size: 18px;
+				}
+				#issues li h1 a:hover {
+					 color: #FFe7ba; 
+					 text-decoration: underline;
+				}
+				#issues li p {
+					font-family: Arial,"Helvetica CY",Helvetica,sans-serif; 
+					font-size: 15px; 
+					font-weight: normal; 
+					line-height: 17px; 
+					margin-right: 65px;
+					padding-left: 40px; 
+					text-shadow: 1px 1px 2px #000000;
+					color: #babcbf;
+				}
+				
+		#next,
+		#prev {
+			position: absolute;
+			top: 0;
+			font-size: 70px;
+			top: 165px;
+			width: 22px;
+			height: 38px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+			transition: none 0s ease 0s;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position: 0 -76px;
+			}
+			#next {
+				right: 0;
+				background-image: url('/web/20160202001312im_/http://content.wargaming.net/time/dev/197/images/next.png');
+			}
+			#prev {
+				left: 0;
+				background-image: url('/web/20160202001312im_/http://content.wargaming.net/time/dev/197/images/prev.png');
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}
+
+.more {
+	text-align: right;
+	color: #f25322;
+}
+.more:hover {
+	color: #ff7432;
+}
